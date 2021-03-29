@@ -9,8 +9,7 @@ Plug 'cocopon/iceberg.vim'
 "Plug 'arcticicestudio/nord-vim'
 Plug 'sainnhe/sonokai'
 Plug 'altercation/vim-colors-solarized'
-
-
+"Plug 'vim-pandoc/vim-pandoc'
 "writeroom-type plugin
 Plug 'junegunn/goyo.vim'
 Plug 'preservim/nerdtree'

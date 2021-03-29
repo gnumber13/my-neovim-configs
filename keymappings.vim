@@ -30,7 +30,8 @@ tnoremap <C-w>l <Esc><C-w>l
 tnoremap jj <C-\><C-n>
 
 "set if filetype is python
-au FileType python noremap <C-j>j :w !python3<Return>
+"au FileType python noremap <C-j>j :w !python3<Return>
+map  <C-j>j :w! \| !compile % <CR><CR>
 "set if filetype is python
 au FileType c noremap <C-j>j :! echo "success" <Return> 
 
