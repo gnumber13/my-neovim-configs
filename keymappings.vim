@@ -31,11 +31,31 @@ tnoremap jj <C-\><C-n>
 
 "set if filetype is python
 "au FileType python noremap <C-j>j :w !python3<Return>
+" in ~/.local/bin/compile
 map  <C-j>j :w! \| !compile % <CR><CR>
-"set if filetype is python
-au FileType c noremap <C-j>j :! echo "success" <Return> 
+
+
+" abbreviations
+iabbrev _hi Hello World 
+iabbrev _sh #/bin/sh
+iabbrev _incl #include <
+iabbrev ``` ```<CR><CR>```<Esc>ki
+iabbrev tex $$<CR><CR>$$<Esc>ki
+
+" for plugin: markdown-preview
+"" normal/insert
+"<Plug>MarkdownPreview
+"<Plug>MarkdownPreviewStop
+"<Plug>MarkdownPreviewToggle
+
+"" example
+nmap <C-s> <Plug>MarkdownPreview
+nmap <M-s> <Plug>MarkdownPreviewStop
+nmap <C-p> <Plug>MarkdownPreviewToggle
+
 
 "" Map leader to ,
+
 let mapleader=','
 "" Split
 noremap <Leader>h :<C-u>split<CR>

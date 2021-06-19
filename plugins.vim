@@ -9,6 +9,9 @@ Plug 'cocopon/iceberg.vim'
 "Plug 'arcticicestudio/nord-vim'
 Plug 'sainnhe/sonokai'
 Plug 'altercation/vim-colors-solarized'
+Plug 'arrufat/vala.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'vimwiki/vimwiki'
 "Plug 'vim-pandoc/vim-pandoc'
 "writeroom-type plugin
 Plug 'junegunn/goyo.vim'
