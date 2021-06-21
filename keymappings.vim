@@ -37,10 +37,13 @@ map  <C-j>j :w! \| !compile % <CR><CR>
 
 " abbreviations
 iabbrev _hi Hello World 
-iabbrev _sh #/bin/sh
+iabbrev _sh #!/bin/sh
 iabbrev _incl #include <
 iabbrev ``` ```<CR><CR>```<Esc>ki
 iabbrev tex $$<CR><CR>$$<Esc>ki
+
+
+iabbrev cmain int main () {<CR><CR>}<Esc>ki
 
 " for plugin: markdown-preview
 "" normal/insert
@@ -55,10 +58,10 @@ nmap <C-p> <Plug>MarkdownPreviewToggle
 
 
 "" Map leader to ,
+let mapleader='J'
 
-let mapleader=','
 "" Split
-noremap <Leader>h :<C-u>split<CR>
+noremap <Leader>h :split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
 
 
@@ -69,7 +72,7 @@ noremap <leader>x :bn<CR>
 noremap <leader>w :bn<CR>
 
 "" Close buffer
-noremap <leader>c :bd<CR>
+noremap <leader>d :bd<CR>
 
 "" Switching windows
 noremap <leader>j <C-w>j
